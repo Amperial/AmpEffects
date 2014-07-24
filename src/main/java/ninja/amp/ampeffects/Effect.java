@@ -1,4 +1,4 @@
-package me.ampayne2.ampeffects;
+package ninja.amp.ampeffects;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

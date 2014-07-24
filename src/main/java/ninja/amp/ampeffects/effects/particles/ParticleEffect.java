@@ -1,4 +1,4 @@
-package me.ampayne2.ampeffects.effects.particles;
+package ninja.amp.ampeffects.effects.particles;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * @author DarkBlade12, highly modified by Ampayne2.
  */
-public enum ParticleEffectType {
+public enum ParticleEffect {
     HUGE_EXPLOSION("hugeexplosion"),
     LARGE_EXPLODE("largeexplode"),
     FIREWORKS_SPARK("fireworksSpark"),
@@ -59,7 +59,7 @@ public enum ParticleEffectType {
 
     private String name;
 
-    ParticleEffectType(String name) {
+    ParticleEffect(String name) {
         this.name = name;
     }
 
@@ -89,7 +89,7 @@ public enum ParticleEffectType {
      *
      * @return The particle effect packet.
      */
-    public static Object createPacket(ParticleEffectType type, Location loc, float offsetX, float offsetY, float offsetZ, float speed, int amount) {
+    public static Object createPacket(ParticleEffect type, Location loc, float offsetX, float offsetY, float offsetZ, float speed, int amount) {
         return createPacket(type.getName(), loc, offsetX, offsetY, offsetZ, speed, amount);
     }
 

@@ -1,6 +1,6 @@
-package me.ampayne2.ampeffects.effects.sounds;
+package ninja.amp.ampeffects.effects.sounds;
 
-import me.ampayne2.ampeffects.Effect;
+import ninja.amp.ampeffects.Effect;
 import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

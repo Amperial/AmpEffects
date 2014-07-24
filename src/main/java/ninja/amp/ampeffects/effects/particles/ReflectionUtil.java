@@ -1,4 +1,4 @@
-package me.ampayne2.ampeffects.effects.particles;
+package ninja.amp.ampeffects.effects.particles;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Reflection utilities used by the {@link me.ampayne2.ampeffects.effects.particles.ParticleEffectType} class.
+ * Reflection utilities used by the {@link ParticleEffect} class.
  */
 public abstract class ReflectionUtil {
     private static final Map<Class<?>, Class<?>> CORRESPONDING_TYPES = new HashMap<>();

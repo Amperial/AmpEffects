@@ -1,4 +1,4 @@
-package me.ampayne2.ampeffects;
+package ninja.amp.ampeffects;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Holds multiple {@link me.ampayne2.ampeffects.Effect}s to simplify playing them all at once.
+ * Holds multiple {@link Effect}s to simplify playing them all at once.
  */
 public class EffectGroup implements Effect {
     private final Set<Effect> effects = new HashSet<>();
@@ -16,7 +16,7 @@ public class EffectGroup implements Effect {
     /**
      * Creates a new EffectGroup.
      *
-     * @param effects The {@link me.ampayne2.ampeffects.Effect}s of the EffectGroup.
+     * @param effects The {@link Effect}s of the EffectGroup.
      */
     public EffectGroup(Effect... effects) {
         this.effects.addAll(Arrays.asList(effects));
@@ -25,7 +25,7 @@ public class EffectGroup implements Effect {
     /**
      * Adds an effect to the EffectGroup.
      *
-     * @param effect The {@link me.ampayne2.ampeffects.Effect}.
+     * @param effect The {@link Effect}.
      * @return The EffectGroup.
      */
     public EffectGroup addEffect(Effect effect) {
@@ -36,7 +36,7 @@ public class EffectGroup implements Effect {
     /**
      * Removes an effect from the EffectGroup.
      *
-     * @param effect The {@link me.ampayne2.ampeffects.Effect}.
+     * @param effect The {@link Effect}.
      * @return The EffectGroup.
      */
     public EffectGroup removeEffect(Effect effect) {
@@ -45,16 +45,16 @@ public class EffectGroup implements Effect {
     }
 
     /**
-     * Gets the EffectGroup's {@link me.ampayne2.ampeffects.Effect}s.
+     * Gets the EffectGroup's {@link Effect}s.
      *
-     * @return The {@link me.ampayne2.ampeffects.Effect}s of the EffectGroup.
+     * @return The {@link Effect}s of the EffectGroup.
      */
     public Set<Effect> getEffects() {
         return effects;
     }
 
     /**
-     * Plays all of the {@link me.ampayne2.ampeffects.Effect}s at a location.
+     * Plays all of the {@link Effect}s at a location.
      *
      * @param location The location to play the effects at.
      * @return The EffectGroup.
@@ -68,7 +68,7 @@ public class EffectGroup implements Effect {
     }
 
     /**
-     * Plays all of the {@link me.ampayne2.ampeffects.Effect}s to a player or players at a location.
+     * Plays all of the {@link Effect}s to a player or players at a location.
      *
      * @param players  The players to play the effects to.
      * @param location The location to play the effects at.
